@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ventadeproducto</title>
+    <link rel="stylesheet" href="./inicio.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-color: #000000; /* Fondo claro para mejor visibilidad */
+        }
+
+        h1 {
+            font-size: 5em; /* Ajusta el tamaño del texto */
+            margin: 100px 0;
+        }
+
+        img {
+            max-width: 100%; /* Asegura que la imagen no exceda el ancho de la pantalla */
+            height: auto; /* Mantiene la proporción de la imagen */
+        }
+
+        button {
+            padding: 10px 20px; /* Espaciado interno del botón */
+            font-size: 1em; /* Tamaño de fuente del botón */
+            margin-top: 20px; /* Espacio entre el botón y la imagen */
+            cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+        }
+    </style>
+</head>
+<body>
+    <h1><p>20 pesotes</p><p>.</p><p>.</p><p>.</p><p>Tellyex bebida de 20 pesotes</p></h1>
+    <img src="https://cdn.pixabay.com/animation/2022/11/13/04/07/04-07-22-38_512.gif" alt="Un pequeño regalo para ti" width="200" height="400">
+    <a href="./ventadeproc.html">
+        <button id="reproducir-musica">picale w</button>
+    </a>
+    <audio id="musica" src="./Sweet Dreams.mp3" type="audio/mp3"></audio>
+
+    <script>
+        const boton = document.getElementById('reproducir-musica');
+        const musica = document.getElementById('musica');
+
+        boton.addEventListener('click', function() {
+            musica.play();
+        });
+    </script>
+</body>
+</html>
